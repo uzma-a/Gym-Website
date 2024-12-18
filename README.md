@@ -22,7 +22,11 @@ Frontend: HTML5 | CSS3 | JavaScript | Tailwind CSS | AOS
 Deployment: Hosted on Vercel.
 
 👩‍💻 Author:
+
 Uzma Aashiya
+
 Portfolio: https://uzma-portfolio-website.vercel.app/
+
 LinkedIn: https://www.linkedin.com/in/uzma-aashiya-700a46316/
+
 GitHub: https://github.com/uzma-a
