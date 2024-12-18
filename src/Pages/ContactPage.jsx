@@ -109,7 +109,7 @@ const ContactPage = () => {
             ></textarea>
           </div>
           <div className="mt-4 sm:mt-6">
-            <h2 className="text-xl sm:text-xl font-semibold text-gray-800 mb-3">
+            <h2 className="text-lg sm:text-xl text-center  font-semibold text-gray-400 mb-4">
               Book Your Appointment
             </h2>
             <div className="grid gap-4 sm:gap-6 sm:grid-cols-1 md:grid-cols-2">

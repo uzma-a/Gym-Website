@@ -55,49 +55,36 @@ const TrainersPage = () => {
     ];
 
     return (
-        <div
-            className="bg-gray-200 min-h-screen bg-cover bg-center bg-no-repeat bg-fixed"
-            style={{
-                backgroundImage: `url(${services_bg})`, // Apply the background image
-            }}
-        >
-            {/* Adjust the overlay for better visibility */}
-            <div className="absolute inset-0 bg-black bg-opacity-80 z-0"></div> {/* Ensure overlay is behind content */}
+        <div className="bg-gray-950 min-h-screen bg-cover bg-center bg-no-repeat bg-fixed">
 
             <header className=" py-5 relative z-10">
-                <h1 className="text-4xl text-center text-white font-bold">Meet Our Trainers</h1>
-                <p className="text-center text-gray-300 mt-2">
+                <h1 data-aos="zoom-in" data-aos-duration='1000' className="text-6xl mt-10 font-bold text-transparent bg-gradient-to-b from-gray-200 to-cyan-600 bg-clip-text text-center">Meet Our Trainers</h1>
+                <p className="text-center text-lg text-gray-300 mt-4">
                     Our team of experienced trainers is here to guide you on your fitness journey.
                 </p>
             </header>
 
-            <main className="py-12 px-4 max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            <main className="py-12 px-4 max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
                 {trainers.map((trainer) => (
                     <div
                         key={trainer.id}
-                        className="bg-white shadow-md rounded-lg p-6 hover:shadow-xl transition-shadow relative z-10"
+                        className="shadow-md bg-gray-100 p-6 hover:shadow-2xl transition-shadow"
                     >
                         <div className="relative">
                             <img
                                 src={trainer.image}
                                 alt={trainer.name}
-                                className="w-full h-80 object-cover rounded-t-lg"
+                                className="w-full h-80 object-cover "
                             />
                             {/* Adding overlay with opacity */}
-                            <div className="rounded-t-lg"></div> {/* Adjust opacity */}
+                            <div className=""></div> {/* Adjust opacity */}
                         </div>
-                        <h2 className="text-xl text-gray-800 font-semibold mt-4">{trainer.name}</h2>
-                        <p className="text-gray-600 font-bold">{trainer.specialty}</p>
-                        <p className="text-gray-600 mt-2">{trainer.bio}</p>
+                        <h2 className="text-xl text-gray-500 font-semibold mt-4">{trainer.name}</h2>
+                        <p  data-aos="fade-right" data-aos-duration='1000' className="text-gray-700 font-bold">{trainer.specialty}</p>
+                        <p data-aos="fade-up" data-aos-duration='1000' className="text-gray-500 mt-2">{trainer.bio}</p>
                     </div>
                 ))}
             </main>
-            <div className="contact bg-black bg-opacity-80 text-lg   text-slate-300 py-5 px-16">
-            <p className=''>Book Your Appointment Today
-                Ready to start your fitness journey with one of our expert trainers? It's easy! Simply click on the "Contact Us" link below to visit our contact page, where you can book your appointment and get all the details you need. Whether you're looking for personal training, yoga, or wellness coaching, our team is here to guide you every step of the way. Don’t wait—book your session now and take the first step towards achieving your goals!  </p>
-                <Link to='/contact'><p className='mt-6 text-blue-700 font-semibold underline'>Contact Us</p></Link>
-            </div>
-            
         </div>
     );
 };
