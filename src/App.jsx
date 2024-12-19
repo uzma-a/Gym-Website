@@ -38,35 +38,38 @@ function App() {
 
   return (
     <BrowserRouter>
-    <div className="App">
-      {isLoading ? <Loading /> : <HeroSection />}
-    </div>
-      <Routes>
-        {/* Home Page with Header, AboutSection, and Footer */}
-        <Route
-          path="/"
-          element={
-            <>
-              
-              <AboutSection />
-              <ServicesPage />
-              <TrainersPage />
-              <LearnMorePage />
-              <MembershipPlans />
-            </>
-          }
-        />
-        {/* Other Pages */}
-        <Route path="/login" element={<LoginSignup />} />
-        <Route path="/contact" element={<ContactPage />} />
-        <Route path='/service' element={<ServicesPage />} />
-        <Route path='/trainers' element={<TrainersPage />} />
-        <Route path='/plans' element={<MembershipPlans />} />
-        <Route path='/plans/booking-a-plan' element={<BookNowPage />} />
-        <Route path="/learn-more-about-diet-plan" element={<LearnMorePage />} />
-      </Routes>
-      {/* Footer for all pages */}
-      <Footer />
+      <div className="App">
+        {isLoading ? (
+          <Loading />
+        ) : (
+          <Routes>
+            {/* Home Page with HeroSection, AboutSection, and Footer */}
+            <Route
+              path="/"
+              element={
+                <>
+                  <HeroSection />
+                  <AboutSection />
+                  <ServicesPage />
+                  <TrainersPage />
+                  <LearnMorePage />
+                  <MembershipPlans />
+                </>
+              }
+            />
+            {/* Other Pages */}
+            <Route path="/login" element={<LoginSignup />} />
+            <Route path="/contact" element={<ContactPage />} />
+            <Route path="/service" element={<ServicesPage />} />
+            <Route path="/trainers" element={<TrainersPage />} />
+            <Route path="/plans" element={<MembershipPlans />} />
+            <Route path="/plans/booking-a-plan" element={<BookNowPage />} />
+            <Route path="/learn-more-about-diet-plan" element={<LearnMorePage />} />
+          </Routes>
+        )}
+        {/* Footer for all pages, only shows after loading */}
+        {!isLoading && <Footer />}
+      </div>
     </BrowserRouter>
   );
 }
