@@ -63,22 +63,22 @@ const HeroSection = () => {
         <div className="options hidden lg:flex items-center">
           <ul  data-aos="zoom-out" className="list-none flex items-center justify-center gap-5 sm:gap-10 text-sm sm:text-lg py-2 mt-2 px-2 sm:px-10 rounded-full">
             <Link to="/service">
-              <li className="cursor-pointer hover:underline underline-offset-4 decoration-2 hover:text-gray-300">
+              <li className="cursor-pointer hover:underline underline-offset-4 decoration-2 text-gray-100 hover:text-gray-300">
                 Services
               </li>
             </Link>
             <Link to="/trainers">
-              <li className="hover:underline underline-offset-4 decoration-2 hover:text-gray-300 cursor-pointer">
+              <li className="hover:underline underline-offset-4 decoration-2 text-gray-100 hover:text-gray-300 cursor-pointer">
                 Trainers
               </li>
             </Link>
             <Link to="/plans">
-              <li className="hover:underline underline-offset-4 decoration-2 hover:text-gray-300 cursor-pointer">
+              <li className="hover:underline underline-offset-4 decoration-2 text-gray-100 hover:text-gray-300 cursor-pointer">
                 Membership Plans
               </li>
             </Link>
             <Link to="/contact">
-              <li className="hover:underline underline-offset-4 decoration-2 hover:text-gray-300 cursor-pointer">
+              <li className="hover:underline underline-offset-4 decoration-2 text-gray-100 hover:text-gray-300 cursor-pointer">
                 Contact Us
               </li>
             </Link>

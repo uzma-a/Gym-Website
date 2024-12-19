@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import './App.css';
 import HeroSection from './Components/HeroSection/HeroSection';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
@@ -13,6 +13,7 @@ import BookNowPage from './Pages/BookNowPage';
 import LearnMorePage from './Pages/LearnMorePage';
 import AOS from 'aos'; // Import AOS library
 import 'aos/dist/aos.css'; // Import AOS styles
+import Loading from './Components/Loading/Loading';
 
 function App() {
   // Initialize AOS
@@ -23,20 +24,34 @@ function App() {
     });
   }, []);
 
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    // Simulate loading time (e.g., 2 seconds)
+    const timer = setTimeout(() => {
+      setIsLoading(false);
+    }, 2000);
+
+    // Cleanup timer on unmount
+    return () => clearTimeout(timer);
+  }, []);
+
   return (
     <BrowserRouter>
+    <div className="App">
+      {isLoading ? <Loading /> : <HeroSection />}
+    </div>
       <Routes>
         {/* Home Page with Header, AboutSection, and Footer */}
         <Route
           path="/"
           element={
             <>
-              <HeroSection />
+              
               <AboutSection />
               <ServicesPage />
               <TrainersPage />
               <LearnMorePage />
-
               <MembershipPlans />
             </>
           }
