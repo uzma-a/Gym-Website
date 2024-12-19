@@ -38,7 +38,7 @@ const MembershipPlans = () => {
   return (
     <div className="min-h-screen  bg-gray-950 text-white py-16 px-4">
       <div className="max-w-screen-lg mx-auto text-center mb-16">
-        <h1 data-aos="zoom-in" data-aos-duration='1000' className="text-6xl font-extrabold text-transparent bg-gradient-to-r from-cyan-500 to-blue-500 bg-clip-text">
+        <h1 data-aos="zoom-in" data-aos-duration='1000' className="text-4xl sm:text-5xl font-bold text-transparent bg-gradient-to-b from-gray-200 to-cyan-600 bg-clip-text text-center">
           Membership Plans
         </h1>
         <p data-aos="fade-up" data-aos-duration='1000' className="text-lg  text-gray-300 mt-4 leading-relaxed">
