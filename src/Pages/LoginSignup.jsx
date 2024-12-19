@@ -17,7 +17,7 @@ const LoginSignup = () => {
       <div className="flex items-center justify-between mb-10 px-2 sm:px-6 md:px-20 relative z-10">
         <Link to="/">
           <div id="logo-style" className="text-4xl sm:text-3xl font-bold text-white cursor-pointer">
-            GymFluencer
+          FitHub
           </div>
         </Link>
         <button className="py-1 px-4 bg-cyan-800 font-bold text-lg rounded-md shadow-[-7px_7px_0px_#fff] border border-transparent hover:text-gray-300">

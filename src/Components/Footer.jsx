@@ -58,9 +58,9 @@ const Footer = () => {
       ))}
       <div className="flex flex-col sm:flex-row justify-center sm:justify-between items-center gap-4 sm:gap-0 mt-12">
         <Link to="/">
-          <div id='logo-style' className="logo font-semibold text-white text-xl sm:text-3xl cursor-pointer ">GymFluencer</div>
+          <div id='logo-style' className="logo font-semibold text-white text-xl sm:text-3xl cursor-pointer ">FitHub</div>
         </Link>
-        <p className="text-base sm:text-lg text-white text-center">All rights reserved. © GymFluencer</p>
+        <p className="text-base sm:text-lg text-white text-center">All rights reserved. © FitHub</p>
       </div>
     </div>
   );

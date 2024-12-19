@@ -17,14 +17,14 @@ const AboutSection = () => {
         <div className="flex flex-col lg:flex-row items-center justify-between gap-12 max-w-7xl mx-auto">
           <div>
             <p className="text-lg font-medium text-gray-100 leading-relaxed">
-              <span className="bg-gradient-to-t font-semibold from-gray-200 to-cyan-600 bg-clip-text text-transparent">Welcome to GymFluencer</span>, where fitness meets inspiration! We are more than just a gym —{" "}
+              <span className="bg-gradient-to-t font-semibold from-gray-200 to-cyan-600 bg-clip-text text-transparent">Welcome to FitHub</span>, where fitness meets inspiration! We are more than just a gym —{" "}
               <span className="bg-gradient-to-t font-semibold from-gray-200 to-cyan-600 bg-clip-text text-transparent">we are a vibrant community dedicated to helping individuals achieve their health and wellness goals</span>. Whether you're a beginner taking the first step on your fitness journey or an athlete pushing the limits,{" "}
               <span className="bg-gradient-to-t font-semibold from-gray-200 to-cyan-600 bg-clip-text text-transparent">our state-of-the-art facilities</span>,{" "}
               <span className="bg-gradient-to-t font-semibold from-gray-200 to-cyan-600 bg-clip-text text-transparent">certified trainers</span>, and{" "}
               <span className="bg-gradient-to-t font-semibold from-gray-200 to-cyan-600 bg-clip-text text-transparent">supportive environment</span> are here to guide you every step of the way.
             </p>
             <p className="mt-6 text-lg font-medium text-gray-100 leading-relaxed">
-              <span className="bg-gradient-to-t font-semibold from-gray-200 to-cyan-600 bg-clip-text text-transparent">At GymFluencer</span>, we believe in empowering our members to transform their lives. From personalized workout plans and expert-led group classes to tailored nutrition advice, we provide all the tools you need to succeed. Join us to experience a holistic approach to fitness that fuels both your body and mind. Together, let's redefine what it means to live a healthy, active lifestyle!
+              <span className="bg-gradient-to-t font-semibold from-gray-200 to-cyan-600 bg-clip-text text-transparent">At FitHub</span>, we believe in empowering our members to transform their lives. From personalized workout plans and expert-led group classes to tailored nutrition advice, we provide all the tools you need to succeed. Join us to experience a holistic approach to fitness that fuels both your body and mind. Together, let's redefine what it means to live a healthy, active lifestyle!
             </p>
           </div>
           <img data-aos="fade-left" data-aos-duration='200'

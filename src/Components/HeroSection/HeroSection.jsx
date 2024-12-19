@@ -49,7 +49,7 @@ const HeroSection = () => {
       {/* Navbar Section */}
       <div className="nav flex items-center justify-between py-4 sm:py-6 px-6 sm:px-10 lg:px-20 relative z-10">
         <Link to="/">
-          <p className="text-3xl sm:text-3xl font-bold text-white">GymFluencer</p>
+          <p className="text-3xl sm:text-3xl font-bold text-white">FitHub</p>
         </Link>
 
         {/* Hamburger Menu for Mobile */}
@@ -139,7 +139,7 @@ const HeroSection = () => {
           <p data-aos="zoom-in-left" data-aos-duration='500' data-aos-delay="200" className="text-base mt-8 sm:text-lg md:text-lg font-extrabold bg-gradient-to-r from-white to-gray-200 bg-clip-text text-transparent">
             Welcome to{' '}
             <span className="text-lg sm:text-xl bg-gradient-to-t from-gray-200 to-cyan-600 bg-clip-text text-transparent">
-              GYMFluencer
+              FitHub
             </span>
             , your ultimate{' '}
             <span className="text-lg sm:text-xl bg-gradient-to-t from-gray-200 to-cyan-600 bg-clip-text text-transparent">
